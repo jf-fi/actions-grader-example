@@ -1,2 +1,2 @@
-echo "hello123"
+echo "hello"
 echo "goodbye"
