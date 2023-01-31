@@ -5,7 +5,7 @@ output=()
 while read -r line
 do
   output+=("$(tr [A-Z] [a-z] <<< "$line")")
-done < <(sh script.sh)
+done < <(sh ../script.sh)
 
 # Test every line
 if [[ ${output[0]} -eq "hello" ]]
