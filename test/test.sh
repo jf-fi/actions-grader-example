@@ -8,14 +8,14 @@ do
 done < <(bash ../script.sh)
 
 # Test every line
-if [[ ${output[0]} -eq "hello" ]]
+if [[ ${output[0]} == "hello" ]]
 then
   lg -r p -m "First line is hello!"
 else
   lg -r f -m "First line is not hello!" -e "Make sure your first line outputs hello." 
 fi
 
-if [[ ${output[1]} -eq "goodbye" ]]
+if [[ ${output[1]} == "goodbye" ]]
 then
   lg -r p -m "Second line is goodbye!"
 else
